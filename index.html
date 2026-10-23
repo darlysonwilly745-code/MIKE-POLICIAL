@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#17251c">
+  <title>Mike Policial | Área de Estudos</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#inicio">
+      <span class="brand-mark">MP</span>
+      <span>MIKE <b>POLICIAL</b></span>
+    </a>
+    <button id="menuToggle" aria-label="Abrir menu">☰</button>
+    <nav id="mainNav">
+      <a href="#inicio">Início</a>
+      <a href="#questoes">Questões</a>
+      <a href="#simulado">Simulado</a>
+      <a href="#ranking">Ranking</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <p class="eyebrow">CENTRAL DE TREINAMENTO AOCP</p>
+      <h1>DISCIPLINA HOJE.<br><span>APROVAÇÃO AMANHÃ.</span></h1>
+      <p>Treine para concursos policiais e acompanhe sua evolução.</p>
+      <a class="btn" href="#questoes">COMEÇAR A TREINAR →</a>
+
+      <div class="stats">
+        <article><small>QUESTÕES</small><strong id="statAnswered">0</strong></article>
+        <article><small>ACERTOS</small><strong id="statCorrect">0</strong></article>
+        <article><small>APROVEITAMENTO</small><strong id="statRate">0%</strong></article>
+        <article><small>EXPERIÊNCIA</small><strong id="statXP">0 XP</strong></article>
+      </div>
+      <p>Patente atual: <strong id="rankName">RECRUTA</strong></p>
+    </section>
+
+    <section class="section" id="questoes">
+      <h2>Banco de questões</h2>
+      <p>Escolha a matéria e responda.</p>
+      <label for="subjectFilter">Matéria</label>
+      <select id="subjectFilter">
+        <option value="Todas">Todas as matérias</option>
+        <option value="Português">Português</option>
+        <option value="RLM">Raciocínio lógico</option>
+        <option value="Informática">Informática</option>
+        <option value="Constitucional">Direito Constitucional</option>
+        <option value="Direitos Humanos">Direitos Humanos</option>
+        <option value="Legislação">Legislação Especial</option>
+      </select>
+      <div id="questionList"></div>
+      <article class="question-card" id="questionCard"></article>
+    </section>
+
+    <section class="section" id="simulado">
+      <h2>Simulado rápido</h2>
+      <p>Teste seus conhecimentos com cinco questões.</p>
+      <button class="btn" id="startQuiz">Iniciar simulado</button>
+      <div id="quizArea"></div>
+    </section>
+
+    <section class="section" id="ranking">
+      <h2>Ranking de operadores</h2>
+      <p>Ranking demonstrativo desta versão.</p>
+      <div id="rankingRows"></div>
+      <h2>Meu desempenho</h2>
+      <div id="subjectPerformance"></div>
+      <button class="btn danger" id="clearProgress">Zerar meu progresso</button>
+    </section>
+  </main>
+
+  <footer>
+    <strong>MIKE POLICIAL</strong>
+    <p>Projeto independente de preparação para concursos.</p>
+    <p>Questões demonstrativas, não oficiais.</p>
+  </footer>
+</body>
+  </html>
+  
